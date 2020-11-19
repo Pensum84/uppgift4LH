@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <!--- Taggar för tex font, css, seo -->
+  <script src="https://kit.fontawesome.com/80f9c42121.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="film, bio, förening, organisation, movies">
+  <meta name="description" content="Vi är riksorganisationen för Bioälskare och här kan du finna mer info om vårt glada gäng och de senaste filmerna."> 
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="Bilder/star.png" alt="stjärna">
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Hem</a></li>
+            <li class="nav-item"><a href="nyheter.html">Nyheter</a></li>
+            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-item"><a href="medlem.html">Medlem</a></li>
+            <li class="nav-item"><a href="länkar.html">Länkar</a></li>
+        </ul>
+    </nav>
+    <!--- Rubrik och underrubrik -->
+    <div class="formflex"><!---Jag skapar en div som omsluter det jag vill ska utgöra flexboxen-->
+        <header>
+            <h1>Formulär</h1>
+        </header>
+    
+        <section>
+            <h4>Här kan du skicka ett meddelande till oss om du är nyfiken på vår förening!</h4>
+        </section>
+    
+        <!--- Formulär -->
+        <form id="form"  action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="POST">
+           <!--- Textfält för namn och telefonnummer, jag sätter dessa två i en egen flexbox inne i den första flexboxen så jag kan lägga namn och tel på en row istället för column-->
+            <div class="kontakt">
+                <label for="namn">Ditt namn: </label><br><!--- Label är viktigt att använda sig av särskilt inom tillgänglighetsanpssningssyfte -->
+                <input type="text" id="namn" name="namn" placeholder="Namn" autofocus required><!--- Jag sätter dit required på alla fält som behöver fyllas i -->
+     
+                <label for="telefon">Telefon: </label><br>
+                <input type="text" id="telefon" name="telefon" placeholder="Nummer" required>
+            </div>
+            <!--- En drop down lista med olika val -->
+            <div class="form-box">
+                <label for="prioritet">Är du medlem hos oss?: </label><br>
+                <select id="prioritet" name="prioritet">
+                  <option value="1">Medlem</option>
+                  <option value="2">Icke Medlem</option>
+                </select>
+            </div>
+            <!--- Rubrikfält för meddelandet -->
+            <div class="form-box">
+                <label for="rubrik">Rubrik </label><br>
+                <input type="text" id="rubrik" name="rubrik" placeholder="Rubrik" required>
+            </div>
+            <!--- Här kan man skriva sitt felmeddelande -->
+            <div class="form-box">
+                <label for="beskrivning">Meddelande </label><br>
+                <input type="text" id="beskrivning" name="beskrivning" placeholder="Skriv ditt meddelande här" required><!--- Här lägger jag in en placeholder så som jag gjort på de andra i första versionen -->
+            </div>
+            <!--- Här nedan finns en submit knapp som sänder formuläret och en reset knapp som återställer det -->
+            <div class="form-box, send">
+                <input type="submit" id="skicka" name="skicka" value="Submit" />
+                <input type="reset" name="reset" id="reset" value="Reset" />
+            </div>
+    
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8134.35602400222!2d17.892923876000168!3d59.35650809997385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e0a4a6ea44b%3A0xaa0d5b0ce4dfa32a!2sBeckomberga%2C%20Bromma%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1605615884693!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <section class="kontaktuppgifter">
+            <p>Adress: Bäcxxxxx väg 09
+                Telefon: 08-xxx xx xx
+            </p>
+        </section>
+    </div>
+        <!--- Footer -->
+        <footer>
+          
+            <p>&copy; Bioälskarnas Riksorgansiation</p>
+    
+        </footer>
+    </body>
+    </html>

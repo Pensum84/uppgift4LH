@@ -1,0 +1,109 @@
+
+/* Responsive Nav Bar */
+@media all and (max-width: 555px) {
+
+    .navbar ul {
+    flex-direction: column;
+    }
+    .navbar ul li {
+    text-align: center;
+    }
+    }
+  
+body {
+    background-image: url(Bilder/biograf.jpg);
+    background-size: cover;
+    color: white;
+    font-family: Grandstander, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 3%;
+    letter-spacing: 2px;
+    }
+
+    .navbar{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between; 
+    font-size: large;
+    }
+    .nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .nav-links li{
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    a:link{
+        color:rgb(245, 232, 163);
+        text-decoration: none;
+    }
+    a:visited{
+        color:rgb(243, 222, 119);
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: rgb(77, 77, 75);
+        text-decoration: underline rgb(238, 199, 102);
+    }
+    a:active{
+        color:rgb(105, 96, 52);
+        
+    }
+
+   /* Indexsidans CSS */
+   .pres{
+       margin-top: 5%;
+       margin-bottom: 5%;
+   }
+    section .btn{
+        margin: 25% 25%;
+        background-color: #f1d742;
+        border: solid 2px rgb(248, 233, 16);
+        border-radius: 15%;
+        color: rgb(24, 22, 22);
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-shadow:1px 1px rgb(122, 120, 120);
+      }
+    section .btn:hover{
+        background-color:#d3b50c ;
+    }
+    .welcome{
+        border: solid rgb(245, 232, 163) 1px;
+        border-radius: 10px;
+        padding: 20px;
+        letter-spacing: 6px;
+        line-height: 110%;
+        word-spacing: 2px;
+    }
+    .pres h1{
+        text-transform: uppercase;
+    }
+
+    /* Kontaktsidans CSS */
+    .kontakt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .form-box{
+        align-items: center;
+        padding: 10px;
+    }
+    .send{
+        margin: 30px;
+    }
+    #namn{
+        margin-right: 20px;
+        margin-left: 6px;
+    }
+    #telefon{
+        margin-left: 6px;
+    }
